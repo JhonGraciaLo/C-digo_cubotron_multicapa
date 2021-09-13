@@ -1,0 +1,149 @@
+#ENTRADA DE DATOS (X) DE MANERA MANUAL - PRIMERA DIMENSIÓN (ELEMENTOS TANGIBLES)
+
+# X_1 TRABAJA CON AW
+# Y_2 TRABAJA CON AT 
+# Z_3 TRABAJA CON AV
+
+from typing import Awaitable
+
+
+X_1 = int(input('Instalaciones: '))
+Y_1 = int(input('Equipo físico: '))
+Z_1 = int(input('Personal: '))
+
+#DIVISIONES DEL CUBO
+AW_1 = 1
+AW_2 = 2
+AW_3 = 3 
+AW_4 = 4 
+AT_1 = 1 
+AT_2 = 2
+AT_3 = 3
+AT_4 = 4 
+AV_1 = 1 
+AV_2 = 2 
+AV_3 = 3 
+AV_4 = 4 
+#ARBOL DE DECISIÓN DEL PRIMER CUBO
+if Y_1 < AT_1: 
+    if X_1 > AW_1:
+        if X_1 > AW_2: 
+            if X_1 > AW_3: 
+                if X_1 > AW_4: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4:
+                                    print('25 veinticinco')
+                                else: 
+                                    print('20 veinte')
+                            else: 
+                                print('15 quince')
+                        else:
+                            print('10 diez')
+                    else:
+                        print('5 cinco') 
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2: 
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('24 Venticuatro')
+                                else:
+                                    ('19 Diez y nueve')
+                            else: 
+                                print('14 catorce')
+                        else: 
+                            print('9 nueve')
+                    else:
+                        print('4 cuatro')
+            else: 
+                if Z_1 > AV_1: 
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3: 
+                            if Z_1 > AV_4:
+                                print('23 veintitres')
+                            else:
+                                print('18 diez y ocho') 
+                        else: 
+                            print('13 trece')
+                    else: 
+                        print('8 ocho')
+                else:
+                    print('3 tres')
+        else:
+            if Z_1 > AV_1:
+                if Z_1 > AV_2: 
+                    if Z_1 > AV_3:
+                        if Z_1 > AV_4: 
+                            print('22 veintidos')
+                        else: 
+                            print('17 diez y siete')
+                    else: 
+                        print('12 doce') 
+                else: 
+                    print('7 siete')
+            else: 
+                print('2 dos')
+    else: 
+        if Z_1 > AV_1: 
+            if Z_1 > AV_2: 
+                if Z_1 > AV_3: 
+                    if Z_1 > AV_4: 
+                        print('21 veintiuno')
+                    else: 
+                        print('16 diez y seis')
+                else: 
+                    print('11 once')        
+            else:
+                print('6 seis') 
+        else:
+            print('1 uno')     
+
+else:
+    Y_1 < AT_2:
+        if X_1 > AW_1: 
+        else: 
+            Y_1 < AT_3
+                if X_1 > AW_1: 
+                else: 
+                    if Y_1 < AT_4:
+                        if X_1 > AW_1: 
+                    else: 
+                        if X_1 > AW_1: 
+                            X_1 > AW_2: 
+                        else: 
+                            Z_1 > AV_1: 
+
+
+
+
+v_4 = int(input('Cumplimiento de promesa: '))
+v_5 = int(input('Fiabilidad: '))
+v_6 = int(input('Cuidado: '))
+v_7 = int(input('Disposición: '))
+v_8 = int(input('Ayuda: '))
+v_9 = int(input('Rapidez: '))
+v_10 = int(input('Destreza: '))
+v_11 = int(input('Conocimiento: '))
+v_12= int(input('Implementación: '))
+v_13 = int(input('Atención: '))
+v_14 = int(input('Respeto: '))
+v_15= int(input('Amabilidad: '))
+v_16 = int(input('Veracidad: '))
+v_17 = int(input('Credibilidad: '))
+v_18 = int(input('Honestidad: '))
+v_19 = int(input('Accesibilidad: '))
+v_20 = int(input('Facilidad: '))
+v_21= int(input('Canales de comunicación: '))
+v_22= int(input('Información: '))
+v_23= int(input('Lenguaje: '))
+v_24= int(input('Escucha: '))
+v_25= int(input('Empatía: '))
+v_26= int(input('Cocreación: '))
+v_27= int(input('Conocimiento del cliente: '))
+
+# EJES DE ENTRADA DE LA INFORMACIÓN
+
+
+# ARBOL DE DECISIÓN QUE TOMA TODAS LAS RUTAS PARA LLEGAR A CADA COORDENADA
