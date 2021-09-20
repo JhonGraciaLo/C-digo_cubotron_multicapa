@@ -1,0 +1,3567 @@
+#ENTRADA DE DATOS (X) DE MANERA MANUAL - PRIMERA DIMENSIÓN (ELEMENTOS TANGIBLES)
+
+# X_1 TRABAJA CON AW
+# Y_2 TRABAJA CON AT 
+# Z_3 TRABAJA CON AV
+
+from typing import Awaitable
+
+
+X_1 = int(input('Instalaciones: '))
+Y_1 = int(input('Equipo físico: '))
+Z_1 = int(input('Personal: '))
+
+#DIVISIONES DEL CUBO
+AW_1 = 1
+AW_2 = 2
+AW_3 = 3 
+AW_4 = 4 
+
+AT_1 = 1 
+AT_2 = 2
+AT_3 = 3
+AT_4 = 4 
+
+AV_1 = 1 
+AV_2 = 2 
+AV_3 = 3 
+AV_4 = 4 
+#ARBOL DE DECISIÓN DEL PRIMER CUBO
+if Y_1 < AT_1: 
+    if X_1 > AW_1:
+        if X_1 > AW_2: 
+            if X_1 > AW_3: 
+                if X_1 > AW_4: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4:
+                                    print('25 veinticinco')
+                                else: 
+                                    print('20 veinte')
+                            else: 
+                                print('15 quince')
+                        else:
+                            print('10 diez')
+                    else:
+                        print('5 cinco') 
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2: 
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('24 Venticuatro')
+                                else:
+                                    ('19 Diez y nueve')
+                            else: 
+                                print('14 catorce')
+                        else: 
+                            print('9 nueve')
+                    else:
+                        print('4 cuatro')
+            else: 
+                if Z_1 > AV_1: 
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3: 
+                            if Z_1 > AV_4:
+                                print('23 veintitres')
+                            else:
+                                print('18 diez y ocho') 
+                        else: 
+                            print('13 trece')
+                    else: 
+                        print('8 ocho')
+                else:
+                    print('3 tres')
+        else:
+            if Z_1 > AV_1:
+                if Z_1 > AV_2: 
+                    if Z_1 > AV_3:
+                        if Z_1 > AV_4: 
+                            print('22 veintidos')
+                        else: 
+                            print('17 diez y siete')
+                    else: 
+                        print('12 doce') 
+                else: 
+                    print('7 siete')
+            else: 
+                print('2 dos')
+    else: 
+        if Z_1 > AV_1: 
+            if Z_1 > AV_2: 
+                if Z_1 > AV_3: 
+                    if Z_1 > AV_4: 
+                        print('21 veintiuno')
+                    else: 
+                        print('16 diez y seis')
+                else: 
+                    print('11 once')        
+            else:
+                print('6 seis') 
+        else:
+            print('1 uno')     
+
+else:
+    if Y_1 < AT_2:
+            if X_1 > AW_1: 
+                if X_1 > AW_2:
+                    if X_1 > AW_3: 
+                       if X_1 > AW_4: 
+                          if Z_1 > AV_1: 
+                              if Z_1 > AV_2:
+                                  if Z_1 > AV_3:
+                                      if Z_1 > AV_4: 
+                                          print('cincuenta 50')
+                                      else: 
+                                          print('cuarenta y cinco 45')
+                                  else: 
+                                      print('cuarenta 40')
+                              else: 
+                                  print('treinta y cinco 35')
+                          else: 
+                              print('treinta 30')
+                       else: 
+                          if Z_1 > AV_1: 
+                              if Z_1 > AV_2: 
+                                  if Z_1 > AV_3: 
+                                      if Z_1 > AV_4: 
+                                          print('cuarent ay cuatro 44')
+                                      else: 
+                                          print('cuarenta y uno 41')
+                                  else: 
+                                      print('treinta y nueve 39')
+                              else: 
+                                  print('treinta y cuatro 34')
+                          else: 
+                              print('Veitinueve 29 ')
+                    else: 
+                        if Z_1 > AV_1:
+                            if Z_1 > AV_2: 
+                                if Z_1 > AV_3:
+                                    if Z_1 > AV_4: 
+                                        print('Cuarenta y ocho 48')
+                                    else: 
+                                        print('cuarenta y tres 43')
+                                else:
+                                  print('treinta y ocho 38')
+                            else:
+                                print('Treinta y tres 33')
+                        
+                        else: 
+                            print('veintiocho 28')
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3:
+                                if Z_1 > AV_4: 
+                                  print('Cuarenta y siete 47')
+                                else: 
+                                  print('cuarenta y dos 42')
+                            else: 
+                              print('treinta y siete 37')
+                        else: 
+                            print('treinta y dos 32')
+                    else: 
+                        print('veintisiete 27')
+            else: 
+                if Z_1 > AV_1: 
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3: 
+                            if Z_1 > AV_4:
+                                print('cuarenta y seis 46')
+                            else: 
+                                print('cuarenta y uno 41') 
+                        else:
+                                print('treinta y seis 36')
+                    else: 
+                        print('treinta y uno 31')
+                else: 
+                    print('veintiseis 26')
+    else:
+        if Y_1 < AT_3:
+            if X_1 > AW_1:
+                if X_1 > AW_2: 
+                    if X_1 > AW_3:
+                        if X_1 > AW_4: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('sententa y cino 75') 
+                                        else: 
+                                            print('setenta 70')
+                                    else: 
+                                        print('Sesenta y cinco 65')
+                                else: 
+                                    print('Sesenta 60')
+                            else: 
+                                print('cincuenta y cinco 55')
+                        else: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('setenta y cuatro 74') 
+                                        else: 
+                                            print('sesenta y nueve 69')
+                                    else: 
+                                        print('sesenta y cuatro 64')
+                                else: 
+                                    print('Cincuenta y nueve 59')
+                            else: 
+                                print('cincuenta y cuatro 54') 
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2:
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('setenta y tres 73')
+                                    else: 
+                                        print('Seseta y ocho 68')
+                                else: 
+                                    print('Sesenta y tres 63') 
+                            else: 
+                                print('Cincuenta y ocho 58')
+                        else: 
+                            print('cincuenta y tres 53')
+                else:
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('Setenta y dos 72')
+                                else:
+                                    print('sesenta y siete 67')
+                            else: 
+                                print('sesenta y dos 62') 
+                        else: 
+                            print('cincuenta y siete 57')
+                    else: 
+                        print('Cincuenta y dos 52')
+            else:
+                if Z_1 > AV_1:
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3:
+                            if Z_1 > AV_4:
+                                print('setenta y uno 71') 
+                            else: 
+                                print('sesenta y seia 66') 
+                        else: 
+                            print('sesenta y uno 61')
+                    else: 
+                        print('cincuenta y seis 56') 
+                else: 
+                    print('cincuenta y uno 51')
+        else: 
+            if Y_1 < AT_4:
+                if X_1 > AW_1: 
+                    if X_1 > AW_2:
+                        if X_1 > AW_3: 
+                            if X_1 > AW_4: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3:
+                                            if Z_1 > AV_4: 
+                                                print('Cien 100')
+                                            else: 
+                                                print('Novent ay cinco')
+                                        else: 
+                                            print('noventa 90') 
+                                    else: 
+                                        print('Ochenta y cinco 85')
+                                else: 
+                                    print('Ochenta 80')
+                            else: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('noventa y nueve 99')
+                                            else: 
+                                                print('noventa y cuatro 94')
+                                        else: 
+                                            print('Ochenta y nueve 89')
+                                    else: 
+                                        print('Ochent ay cuetro 84')
+                                else: 
+                                    print('setenta y nueve')
+                        else: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2:
+                                    if Z_1 > AV_3:
+                                        if Z_1 > AV_4: 
+                                            print('Noventa y ocho 98')
+                                        else: 
+                                            print('noventa y tres 93')
+                                    else: 
+                                        print('ochenta y ocho 88') 
+                                else: 
+                                    print('Ochenta y tres 83')
+                            else: 
+                                print('Setenta y ocho 78')
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2: 
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('Noventa y siete 97')
+                                    else: 
+                                        print('noventa y dos 92')
+                                else: 
+                                    print('ochenta y siete 87')
+                            else: 
+                                print('ochenta y dos 82')
+                        else: 
+                            print('setenta y siete 77')
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('noventa y uno 91')
+                            else: 
+                                print('Ochenta y seis 86') 
+                        else: 
+                            print('ochenta y uno 81')
+                    else: 
+                        print('setenta y seis 76')
+
+            else: 
+                if X_1 > AW_1:
+                    if X_1 > AW_2: 
+                        if X > AW_3: 
+                            if X_1 > AW_4: 
+                                if Z_1 > AV_1:
+                                    if Z_1 > AV_2: 
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('Ciento veinticinco 125')
+                                            else: 
+                                                print('Ciento veinte 120')
+                                        else: 
+                                            print('Ciento quince 115')
+                                    else: 
+                                        print('ciento diez 110') 
+                                else: 
+                                    print('ciento cinco 105')
+                            else: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('Ciento veinti cuatro 124')
+                                            else: 
+                                                print('Ciento diez y nueve 119')
+                                        else: 
+                                            print('Ciento catorce 114') 
+                                    else: 
+                                        print('Ciento nueve 109')
+                                else: 
+                                    print('ciento cuatro 104')
+                        else: 
+                            if Z_1 > AV_1:
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('Ciento veinti tres 123') 
+                                        else: 
+                                            print('ciento diez y ocho 118')
+                                    else: 
+                                        print('Ciento trece 113')
+                                else: 
+                                    print('ciento ocho 108') 
+                            else: 
+                                print('ciento tres 103')
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2:
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('Siento veinidos 122')
+                                    else: 
+                                        print('Siento diez y siete 117')
+                                else: 
+                                    print('Ciento doce 112') 
+                            else: 
+                                print('ciento siete 107')
+                        else: 
+                            print('ciento dos 102')
+                else:
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2: 
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('Ciento veiniuno 121')
+                                else: 
+                                    print('ciento diez y seis 116')
+                            else: 
+                                print('ciento once 111')
+                        else: 
+                            print('ciento seis 106')
+                    else: 
+                        print('ciento uno 101')
+
+#SEGUNDA DIMENSIÓN
+
+X_2 = int(input('Cumplimiento de promesa: '))
+Y_2 = int(input('Fiabilidad: '))
+Z_2 = int(input('Cuidado: '))
+BW_1 = 1
+BW_2 = 2
+BW_3 = 3 
+BW_4 = 4 
+
+BT_1 = 1 
+BT_2 = 2
+BT_3 = 3
+BT_4 = 4 
+
+BV_1 = 1 
+BV_2 = 2 
+BV_3 = 3 
+BV_4 = 4 
+
+#SEGUNDO CUBO AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+if Y_1 < AT_1: 
+    if X_1 > AW_1:
+        if X_1 > AW_2: 
+            if X_1 > AW_3: 
+                if X_1 > AW_4: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4:
+                                    print('25 veinticinco')
+                                else: 
+                                    print('20 veinte')
+                            else: 
+                                print('15 quince')
+                        else:
+                            print('10 diez')
+                    else:
+                        print('5 cinco') 
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2: 
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('24 Venticuatro')
+                                else:
+                                    ('19 Diez y nueve')
+                            else: 
+                                print('14 catorce')
+                        else: 
+                            print('9 nueve')
+                    else:
+                        print('4 cuatro')
+            else: 
+                if Z_1 > AV_1: 
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3: 
+                            if Z_1 > AV_4:
+                                print('23 veintitres')
+                            else:
+                                print('18 diez y ocho') 
+                        else: 
+                            print('13 trece')
+                    else: 
+                        print('8 ocho')
+                else:
+                    print('3 tres')
+        else:
+            if Z_1 > AV_1:
+                if Z_1 > AV_2: 
+                    if Z_1 > AV_3:
+                        if Z_1 > AV_4: 
+                            print('22 veintidos')
+                        else: 
+                            print('17 diez y siete')
+                    else: 
+                        print('12 doce') 
+                else: 
+                    print('7 siete')
+            else: 
+                print('2 dos')
+    else: 
+        if Z_1 > AV_1: 
+            if Z_1 > AV_2: 
+                if Z_1 > AV_3: 
+                    if Z_1 > AV_4: 
+                        print('21 veintiuno')
+                    else: 
+                        print('16 diez y seis')
+                else: 
+                    print('11 once')        
+            else:
+                print('6 seis') 
+        else:
+            print('1 uno')     
+
+else:
+    if Y_1 < AT_2:
+            if X_1 > AW_1: 
+                if X_1 > AW_2:
+                    if X_1 > AW_3: 
+                       if X_1 > AW_4: 
+                          if Z_1 > AV_1: 
+                              if Z_1 > AV_2:
+                                  if Z_1 > AV_3:
+                                      if Z_1 > AV_4: 
+                                          print('cincuenta 50')
+                                      else: 
+                                          print('cuarenta y cinco 45')
+                                  else: 
+                                      print('cuarenta 40')
+                              else: 
+                                  print('treinta y cinco 35')
+                          else: 
+                              print('treinta 30')
+                       else: 
+                          if Z_1 > AV_1: 
+                              if Z_1 > AV_2: 
+                                  if Z_1 > AV_3: 
+                                      if Z_1 > AV_4: 
+                                          print('cuarent ay cuatro 44')
+                                      else: 
+                                          print('cuarenta y uno 41')
+                                  else: 
+                                      print('treinta y nueve 39')
+                              else: 
+                                  print('treinta y cuatro 34')
+                          else: 
+                              print('Veitinueve 29 ')
+                    else: 
+                        if Z_1 > AV_1:
+                            if Z_1 > AV_2: 
+                                if Z_1 > AV_3:
+                                    if Z_1 > AV_4: 
+                                        print('Cuarenta y ocho 48')
+                                    else: 
+                                        print('cuarenta y tres 43')
+                                else:
+                                  print('treinta y ocho 38')
+                            else:
+                                print('Treinta y tres 33')
+                        
+                        else: 
+                            print('veintiocho 28')
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3:
+                                if Z_1 > AV_4: 
+                                  print('Cuarenta y siete 47')
+                                else: 
+                                  print('cuarenta y dos 42')
+                            else: 
+                              print('treinta y siete 37')
+                        else: 
+                            print('treinta y dos 32')
+                    else: 
+                        print('veintisiete 27')
+            else: 
+                if Z_1 > AV_1: 
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3: 
+                            if Z_1 > AV_4:
+                                print('cuarenta y seis 46')
+                            else: 
+                                print('cuarenta y uno 41') 
+                        else:
+                                print('treinta y seis 36')
+                    else: 
+                        print('treinta y uno 31')
+                else: 
+                    print('veintiseis 26')
+    else:
+        if Y_1 < AT_3:
+            if X_1 > AW_1:
+                if X_1 > AW_2: 
+                    if X_1 > AW_3:
+                        if X_1 > AW_4: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('sententa y cino 75') 
+                                        else: 
+                                            print('setenta 70')
+                                    else: 
+                                        print('Sesenta y cinco 65')
+                                else: 
+                                    print('Sesenta 60')
+                            else: 
+                                print('cincuenta y cinco 55')
+                        else: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('setenta y cuatro 74') 
+                                        else: 
+                                            print('sesenta y nueve 69')
+                                    else: 
+                                        print('sesenta y cuatro 64')
+                                else: 
+                                    print('Cincuenta y nueve 59')
+                            else: 
+                                print('cincuenta y cuatro 54') 
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2:
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('setenta y tres 73')
+                                    else: 
+                                        print('Seseta y ocho 68')
+                                else: 
+                                    print('Sesenta y tres 63') 
+                            else: 
+                                print('Cincuenta y ocho 58')
+                        else: 
+                            print('cincuenta y tres 53')
+                else:
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('Setenta y dos 72')
+                                else:
+                                    print('sesenta y siete 67')
+                            else: 
+                                print('sesenta y dos 62') 
+                        else: 
+                            print('cincuenta y siete 57')
+                    else: 
+                        print('Cincuenta y dos 52')
+            else:
+                if Z_1 > AV_1:
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3:
+                            if Z_1 > AV_4:
+                                print('setenta y uno 71') 
+                            else: 
+                                print('sesenta y seia 66') 
+                        else: 
+                            print('sesenta y uno 61')
+                    else: 
+                        print('cincuenta y seis 56') 
+                else: 
+                    print('cincuenta y uno 51')
+        else: 
+            if Y_1 < AT_4:
+                if X_1 > AW_1: 
+                    if X_1 > AW_2:
+                        if X_1 > AW_3: 
+                            if X_1 > AW_4: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3:
+                                            if Z_1 > AV_4: 
+                                                print('Cien 100')
+                                            else: 
+                                                print('Novent ay cinco')
+                                        else: 
+                                            print('noventa 90') 
+                                    else: 
+                                        print('Ochenta y cinco 85')
+                                else: 
+                                    print('Ochenta 80')
+                            else: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('noventa y nueve 99')
+                                            else: 
+                                                print('noventa y cuatro 94')
+                                        else: 
+                                            print('Ochenta y nueve 89')
+                                    else: 
+                                        print('Ochent ay cuetro 84')
+                                else: 
+                                    print('setenta y nueve')
+                        else: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2:
+                                    if Z_1 > AV_3:
+                                        if Z_1 > AV_4: 
+                                            print('Noventa y ocho 98')
+                                        else: 
+                                            print('noventa y tres 93')
+                                    else: 
+                                        print('ochenta y ocho 88') 
+                                else: 
+                                    print('Ochenta y tres 83')
+                            else: 
+                                print('Setenta y ocho 78')
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2: 
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('Noventa y siete 97')
+                                    else: 
+                                        print('noventa y dos 92')
+                                else: 
+                                    print('ochenta y siete 87')
+                            else: 
+                                print('ochenta y dos 82')
+                        else: 
+                            print('setenta y siete 77')
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('noventa y uno 91')
+                            else: 
+                                print('Ochenta y seis 86') 
+                        else: 
+                            print('ochenta y uno 81')
+                    else: 
+                        print('setenta y seis 76')
+
+            else: 
+                if X_1 > AW_1:
+                    if X_1 > AW_2: 
+                        if X > AW_3: 
+                            if X_1 > AW_4: 
+                                if Z_1 > AV_1:
+                                    if Z_1 > AV_2: 
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('Ciento veinticinco 125')
+                                            else: 
+                                                print('Ciento veinte 120')
+                                        else: 
+                                            print('Ciento quince 115')
+                                    else: 
+                                        print('ciento diez 110') 
+                                else: 
+                                    print('ciento cinco 105')
+                            else: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('Ciento veinti cuatro 124')
+                                            else: 
+                                                print('Ciento diez y nueve 119')
+                                        else: 
+                                            print('Ciento catorce 114') 
+                                    else: 
+                                        print('Ciento nueve 109')
+                                else: 
+                                    print('ciento cuatro 104')
+                        else: 
+                            if Z_1 > AV_1:
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('Ciento veinti tres 123') 
+                                        else: 
+                                            print('ciento diez y ocho 118')
+                                    else: 
+                                        print('Ciento trece 113')
+                                else: 
+                                    print('ciento ocho 108') 
+                            else: 
+                                print('ciento tres 103')
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2:
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('Siento veinidos 122')
+                                    else: 
+                                        print('Siento diez y siete 117')
+                                else: 
+                                    print('Ciento doce 112') 
+                            else: 
+                                print('ciento siete 107')
+                        else: 
+                            print('ciento dos 102')
+                else:
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2: 
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('Ciento veiniuno 121')
+                                else: 
+                                    print('ciento diez y seis 116')
+                            else: 
+                                print('ciento once 111')
+                        else: 
+                            print('ciento seis 106')
+                    else: 
+                        print('ciento uno 101')
+
+
+X_3 = int(input('Disposición: '))
+Y_3 = int(input('Ayuda: '))
+Z_3 = int(input('Rapidez: '))
+CW_1 = 1
+CW_2 = 2
+CW_3 = 3 
+CW_4 = 4 
+
+CT_1 = 1 
+CT_2 = 2
+CT_3 = 3
+CT_4 = 4 
+
+CV_1 = 1 
+CV_2 = 2 
+CV_3 = 3 
+CV_4 = 4 
+
+#TERCER CUBO AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+if Y_1 < AT_1: 
+    if X_1 > AW_1:
+        if X_1 > AW_2: 
+            if X_1 > AW_3: 
+                if X_1 > AW_4: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4:
+                                    print('25 veinticinco')
+                                else: 
+                                    print('20 veinte')
+                            else: 
+                                print('15 quince')
+                        else:
+                            print('10 diez')
+                    else:
+                        print('5 cinco') 
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2: 
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('24 Venticuatro')
+                                else:
+                                    ('19 Diez y nueve')
+                            else: 
+                                print('14 catorce')
+                        else: 
+                            print('9 nueve')
+                    else:
+                        print('4 cuatro')
+            else: 
+                if Z_1 > AV_1: 
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3: 
+                            if Z_1 > AV_4:
+                                print('23 veintitres')
+                            else:
+                                print('18 diez y ocho') 
+                        else: 
+                            print('13 trece')
+                    else: 
+                        print('8 ocho')
+                else:
+                    print('3 tres')
+        else:
+            if Z_1 > AV_1:
+                if Z_1 > AV_2: 
+                    if Z_1 > AV_3:
+                        if Z_1 > AV_4: 
+                            print('22 veintidos')
+                        else: 
+                            print('17 diez y siete')
+                    else: 
+                        print('12 doce') 
+                else: 
+                    print('7 siete')
+            else: 
+                print('2 dos')
+    else: 
+        if Z_1 > AV_1: 
+            if Z_1 > AV_2: 
+                if Z_1 > AV_3: 
+                    if Z_1 > AV_4: 
+                        print('21 veintiuno')
+                    else: 
+                        print('16 diez y seis')
+                else: 
+                    print('11 once')        
+            else:
+                print('6 seis') 
+        else:
+            print('1 uno')     
+
+else:
+    if Y_1 < AT_2:
+            if X_1 > AW_1: 
+                if X_1 > AW_2:
+                    if X_1 > AW_3: 
+                       if X_1 > AW_4: 
+                          if Z_1 > AV_1: 
+                              if Z_1 > AV_2:
+                                  if Z_1 > AV_3:
+                                      if Z_1 > AV_4: 
+                                          print('cincuenta 50')
+                                      else: 
+                                          print('cuarenta y cinco 45')
+                                  else: 
+                                      print('cuarenta 40')
+                              else: 
+                                  print('treinta y cinco 35')
+                          else: 
+                              print('treinta 30')
+                       else: 
+                          if Z_1 > AV_1: 
+                              if Z_1 > AV_2: 
+                                  if Z_1 > AV_3: 
+                                      if Z_1 > AV_4: 
+                                          print('cuarent ay cuatro 44')
+                                      else: 
+                                          print('cuarenta y uno 41')
+                                  else: 
+                                      print('treinta y nueve 39')
+                              else: 
+                                  print('treinta y cuatro 34')
+                          else: 
+                              print('Veitinueve 29 ')
+                    else: 
+                        if Z_1 > AV_1:
+                            if Z_1 > AV_2: 
+                                if Z_1 > AV_3:
+                                    if Z_1 > AV_4: 
+                                        print('Cuarenta y ocho 48')
+                                    else: 
+                                        print('cuarenta y tres 43')
+                                else:
+                                  print('treinta y ocho 38')
+                            else:
+                                print('Treinta y tres 33')
+                        
+                        else: 
+                            print('veintiocho 28')
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3:
+                                if Z_1 > AV_4: 
+                                  print('Cuarenta y siete 47')
+                                else: 
+                                  print('cuarenta y dos 42')
+                            else: 
+                              print('treinta y siete 37')
+                        else: 
+                            print('treinta y dos 32')
+                    else: 
+                        print('veintisiete 27')
+            else: 
+                if Z_1 > AV_1: 
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3: 
+                            if Z_1 > AV_4:
+                                print('cuarenta y seis 46')
+                            else: 
+                                print('cuarenta y uno 41') 
+                        else:
+                                print('treinta y seis 36')
+                    else: 
+                        print('treinta y uno 31')
+                else: 
+                    print('veintiseis 26')
+    else:
+        if Y_1 < AT_3:
+            if X_1 > AW_1:
+                if X_1 > AW_2: 
+                    if X_1 > AW_3:
+                        if X_1 > AW_4: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('sententa y cino 75') 
+                                        else: 
+                                            print('setenta 70')
+                                    else: 
+                                        print('Sesenta y cinco 65')
+                                else: 
+                                    print('Sesenta 60')
+                            else: 
+                                print('cincuenta y cinco 55')
+                        else: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('setenta y cuatro 74') 
+                                        else: 
+                                            print('sesenta y nueve 69')
+                                    else: 
+                                        print('sesenta y cuatro 64')
+                                else: 
+                                    print('Cincuenta y nueve 59')
+                            else: 
+                                print('cincuenta y cuatro 54') 
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2:
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('setenta y tres 73')
+                                    else: 
+                                        print('Seseta y ocho 68')
+                                else: 
+                                    print('Sesenta y tres 63') 
+                            else: 
+                                print('Cincuenta y ocho 58')
+                        else: 
+                            print('cincuenta y tres 53')
+                else:
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('Setenta y dos 72')
+                                else:
+                                    print('sesenta y siete 67')
+                            else: 
+                                print('sesenta y dos 62') 
+                        else: 
+                            print('cincuenta y siete 57')
+                    else: 
+                        print('Cincuenta y dos 52')
+            else:
+                if Z_1 > AV_1:
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3:
+                            if Z_1 > AV_4:
+                                print('setenta y uno 71') 
+                            else: 
+                                print('sesenta y seia 66') 
+                        else: 
+                            print('sesenta y uno 61')
+                    else: 
+                        print('cincuenta y seis 56') 
+                else: 
+                    print('cincuenta y uno 51')
+        else: 
+            if Y_1 < AT_4:
+                if X_1 > AW_1: 
+                    if X_1 > AW_2:
+                        if X_1 > AW_3: 
+                            if X_1 > AW_4: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3:
+                                            if Z_1 > AV_4: 
+                                                print('Cien 100')
+                                            else: 
+                                                print('Novent ay cinco')
+                                        else: 
+                                            print('noventa 90') 
+                                    else: 
+                                        print('Ochenta y cinco 85')
+                                else: 
+                                    print('Ochenta 80')
+                            else: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('noventa y nueve 99')
+                                            else: 
+                                                print('noventa y cuatro 94')
+                                        else: 
+                                            print('Ochenta y nueve 89')
+                                    else: 
+                                        print('Ochent ay cuetro 84')
+                                else: 
+                                    print('setenta y nueve')
+                        else: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2:
+                                    if Z_1 > AV_3:
+                                        if Z_1 > AV_4: 
+                                            print('Noventa y ocho 98')
+                                        else: 
+                                            print('noventa y tres 93')
+                                    else: 
+                                        print('ochenta y ocho 88') 
+                                else: 
+                                    print('Ochenta y tres 83')
+                            else: 
+                                print('Setenta y ocho 78')
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2: 
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('Noventa y siete 97')
+                                    else: 
+                                        print('noventa y dos 92')
+                                else: 
+                                    print('ochenta y siete 87')
+                            else: 
+                                print('ochenta y dos 82')
+                        else: 
+                            print('setenta y siete 77')
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('noventa y uno 91')
+                            else: 
+                                print('Ochenta y seis 86') 
+                        else: 
+                            print('ochenta y uno 81')
+                    else: 
+                        print('setenta y seis 76')
+
+            else: 
+                if X_1 > AW_1:
+                    if X_1 > AW_2: 
+                        if X > AW_3: 
+                            if X_1 > AW_4: 
+                                if Z_1 > AV_1:
+                                    if Z_1 > AV_2: 
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('Ciento veinticinco 125')
+                                            else: 
+                                                print('Ciento veinte 120')
+                                        else: 
+                                            print('Ciento quince 115')
+                                    else: 
+                                        print('ciento diez 110') 
+                                else: 
+                                    print('ciento cinco 105')
+                            else: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('Ciento veinti cuatro 124')
+                                            else: 
+                                                print('Ciento diez y nueve 119')
+                                        else: 
+                                            print('Ciento catorce 114') 
+                                    else: 
+                                        print('Ciento nueve 109')
+                                else: 
+                                    print('ciento cuatro 104')
+                        else: 
+                            if Z_1 > AV_1:
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('Ciento veinti tres 123') 
+                                        else: 
+                                            print('ciento diez y ocho 118')
+                                    else: 
+                                        print('Ciento trece 113')
+                                else: 
+                                    print('ciento ocho 108') 
+                            else: 
+                                print('ciento tres 103')
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2:
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('Siento veinidos 122')
+                                    else: 
+                                        print('Siento diez y siete 117')
+                                else: 
+                                    print('Ciento doce 112') 
+                            else: 
+                                print('ciento siete 107')
+                        else: 
+                            print('ciento dos 102')
+                else:
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2: 
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('Ciento veiniuno 121')
+                                else: 
+                                    print('ciento diez y seis 116')
+                            else: 
+                                print('ciento once 111')
+                        else: 
+                            print('ciento seis 106')
+                    else: 
+                        print('ciento uno 101')
+
+
+X_4 = int(input('Destreza: '))
+Y_4 = int(input('Conocimiento: '))
+Z_4= int(input('Implementación: '))
+DW_1 = 1
+DW_2 = 2
+DW_3 = 3 
+DW_4 = 4 
+
+DT_1 = 1 
+DT_2 = 2
+DT_3 = 3
+DT_4 = 4 
+
+DV_1 = 1 
+DV_2 = 2 
+DV_3 = 3 
+DV_4 = 4 
+
+#CUARTO CUBO
+if Y_1 < AT_1: 
+    if X_1 > AW_1:
+        if X_1 > AW_2: 
+            if X_1 > AW_3: 
+                if X_1 > AW_4: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4:
+                                    print('25 veinticinco')
+                                else: 
+                                    print('20 veinte')
+                            else: 
+                                print('15 quince')
+                        else:
+                            print('10 diez')
+                    else:
+                        print('5 cinco') 
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2: 
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('24 Venticuatro')
+                                else:
+                                    ('19 Diez y nueve')
+                            else: 
+                                print('14 catorce')
+                        else: 
+                            print('9 nueve')
+                    else:
+                        print('4 cuatro')
+            else: 
+                if Z_1 > AV_1: 
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3: 
+                            if Z_1 > AV_4:
+                                print('23 veintitres')
+                            else:
+                                print('18 diez y ocho') 
+                        else: 
+                            print('13 trece')
+                    else: 
+                        print('8 ocho')
+                else:
+                    print('3 tres')
+        else:
+            if Z_1 > AV_1:
+                if Z_1 > AV_2: 
+                    if Z_1 > AV_3:
+                        if Z_1 > AV_4: 
+                            print('22 veintidos')
+                        else: 
+                            print('17 diez y siete')
+                    else: 
+                        print('12 doce') 
+                else: 
+                    print('7 siete')
+            else: 
+                print('2 dos')
+    else: 
+        if Z_1 > AV_1: 
+            if Z_1 > AV_2: 
+                if Z_1 > AV_3: 
+                    if Z_1 > AV_4: 
+                        print('21 veintiuno')
+                    else: 
+                        print('16 diez y seis')
+                else: 
+                    print('11 once')        
+            else:
+                print('6 seis') 
+        else:
+            print('1 uno')     
+
+else:
+    if Y_1 < AT_2:
+            if X_1 > AW_1: 
+                if X_1 > AW_2:
+                    if X_1 > AW_3: 
+                       if X_1 > AW_4: 
+                          if Z_1 > AV_1: 
+                              if Z_1 > AV_2:
+                                  if Z_1 > AV_3:
+                                      if Z_1 > AV_4: 
+                                          print('cincuenta 50')
+                                      else: 
+                                          print('cuarenta y cinco 45')
+                                  else: 
+                                      print('cuarenta 40')
+                              else: 
+                                  print('treinta y cinco 35')
+                          else: 
+                              print('treinta 30')
+                       else: 
+                          if Z_1 > AV_1: 
+                              if Z_1 > AV_2: 
+                                  if Z_1 > AV_3: 
+                                      if Z_1 > AV_4: 
+                                          print('cuarent ay cuatro 44')
+                                      else: 
+                                          print('cuarenta y uno 41')
+                                  else: 
+                                      print('treinta y nueve 39')
+                              else: 
+                                  print('treinta y cuatro 34')
+                          else: 
+                              print('Veitinueve 29 ')
+                    else: 
+                        if Z_1 > AV_1:
+                            if Z_1 > AV_2: 
+                                if Z_1 > AV_3:
+                                    if Z_1 > AV_4: 
+                                        print('Cuarenta y ocho 48')
+                                    else: 
+                                        print('cuarenta y tres 43')
+                                else:
+                                  print('treinta y ocho 38')
+                            else:
+                                print('Treinta y tres 33')
+                        
+                        else: 
+                            print('veintiocho 28')
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3:
+                                if Z_1 > AV_4: 
+                                  print('Cuarenta y siete 47')
+                                else: 
+                                  print('cuarenta y dos 42')
+                            else: 
+                              print('treinta y siete 37')
+                        else: 
+                            print('treinta y dos 32')
+                    else: 
+                        print('veintisiete 27')
+            else: 
+                if Z_1 > AV_1: 
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3: 
+                            if Z_1 > AV_4:
+                                print('cuarenta y seis 46')
+                            else: 
+                                print('cuarenta y uno 41') 
+                        else:
+                                print('treinta y seis 36')
+                    else: 
+                        print('treinta y uno 31')
+                else: 
+                    print('veintiseis 26')
+    else:
+        if Y_1 < AT_3:
+            if X_1 > AW_1:
+                if X_1 > AW_2: 
+                    if X_1 > AW_3:
+                        if X_1 > AW_4: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('sententa y cino 75') 
+                                        else: 
+                                            print('setenta 70')
+                                    else: 
+                                        print('Sesenta y cinco 65')
+                                else: 
+                                    print('Sesenta 60')
+                            else: 
+                                print('cincuenta y cinco 55')
+                        else: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('setenta y cuatro 74') 
+                                        else: 
+                                            print('sesenta y nueve 69')
+                                    else: 
+                                        print('sesenta y cuatro 64')
+                                else: 
+                                    print('Cincuenta y nueve 59')
+                            else: 
+                                print('cincuenta y cuatro 54') 
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2:
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('setenta y tres 73')
+                                    else: 
+                                        print('Seseta y ocho 68')
+                                else: 
+                                    print('Sesenta y tres 63') 
+                            else: 
+                                print('Cincuenta y ocho 58')
+                        else: 
+                            print('cincuenta y tres 53')
+                else:
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('Setenta y dos 72')
+                                else:
+                                    print('sesenta y siete 67')
+                            else: 
+                                print('sesenta y dos 62') 
+                        else: 
+                            print('cincuenta y siete 57')
+                    else: 
+                        print('Cincuenta y dos 52')
+            else:
+                if Z_1 > AV_1:
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3:
+                            if Z_1 > AV_4:
+                                print('setenta y uno 71') 
+                            else: 
+                                print('sesenta y seia 66') 
+                        else: 
+                            print('sesenta y uno 61')
+                    else: 
+                        print('cincuenta y seis 56') 
+                else: 
+                    print('cincuenta y uno 51')
+        else: 
+            if Y_1 < AT_4:
+                if X_1 > AW_1: 
+                    if X_1 > AW_2:
+                        if X_1 > AW_3: 
+                            if X_1 > AW_4: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3:
+                                            if Z_1 > AV_4: 
+                                                print('Cien 100')
+                                            else: 
+                                                print('Novent ay cinco')
+                                        else: 
+                                            print('noventa 90') 
+                                    else: 
+                                        print('Ochenta y cinco 85')
+                                else: 
+                                    print('Ochenta 80')
+                            else: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('noventa y nueve 99')
+                                            else: 
+                                                print('noventa y cuatro 94')
+                                        else: 
+                                            print('Ochenta y nueve 89')
+                                    else: 
+                                        print('Ochent ay cuetro 84')
+                                else: 
+                                    print('setenta y nueve')
+                        else: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2:
+                                    if Z_1 > AV_3:
+                                        if Z_1 > AV_4: 
+                                            print('Noventa y ocho 98')
+                                        else: 
+                                            print('noventa y tres 93')
+                                    else: 
+                                        print('ochenta y ocho 88') 
+                                else: 
+                                    print('Ochenta y tres 83')
+                            else: 
+                                print('Setenta y ocho 78')
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2: 
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('Noventa y siete 97')
+                                    else: 
+                                        print('noventa y dos 92')
+                                else: 
+                                    print('ochenta y siete 87')
+                            else: 
+                                print('ochenta y dos 82')
+                        else: 
+                            print('setenta y siete 77')
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('noventa y uno 91')
+                            else: 
+                                print('Ochenta y seis 86') 
+                        else: 
+                            print('ochenta y uno 81')
+                    else: 
+                        print('setenta y seis 76')
+
+            else: 
+                if X_1 > AW_1:
+                    if X_1 > AW_2: 
+                        if X > AW_3: 
+                            if X_1 > AW_4: 
+                                if Z_1 > AV_1:
+                                    if Z_1 > AV_2: 
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('Ciento veinticinco 125')
+                                            else: 
+                                                print('Ciento veinte 120')
+                                        else: 
+                                            print('Ciento quince 115')
+                                    else: 
+                                        print('ciento diez 110') 
+                                else: 
+                                    print('ciento cinco 105')
+                            else: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('Ciento veinti cuatro 124')
+                                            else: 
+                                                print('Ciento diez y nueve 119')
+                                        else: 
+                                            print('Ciento catorce 114') 
+                                    else: 
+                                        print('Ciento nueve 109')
+                                else: 
+                                    print('ciento cuatro 104')
+                        else: 
+                            if Z_1 > AV_1:
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('Ciento veinti tres 123') 
+                                        else: 
+                                            print('ciento diez y ocho 118')
+                                    else: 
+                                        print('Ciento trece 113')
+                                else: 
+                                    print('ciento ocho 108') 
+                            else: 
+                                print('ciento tres 103')
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2:
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('Siento veinidos 122')
+                                    else: 
+                                        print('Siento diez y siete 117')
+                                else: 
+                                    print('Ciento doce 112') 
+                            else: 
+                                print('ciento siete 107')
+                        else: 
+                            print('ciento dos 102')
+                else:
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2: 
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('Ciento veiniuno 121')
+                                else: 
+                                    print('ciento diez y seis 116')
+                            else: 
+                                print('ciento once 111')
+                        else: 
+                            print('ciento seis 106')
+                    else: 
+                        print('ciento uno 101')
+
+X_5 = int(input('Atención: '))
+Y_5 = int(input('Respeto: '))
+Z_5 = int(input('Amabilidad: '))
+EW_1 = 1
+EW_2 = 2
+EW_3 = 3 
+EW_4 = 4 
+
+ET_1 = 1 
+ET_2 = 2
+ET_3 = 3
+ET_4 = 4 
+
+EV_1 = 1 
+EV_2 = 2 
+EV_3 = 3 
+EV_4 = 4 
+
+#QUINTO CUBO
+if Y_1 < AT_1: 
+    if X_1 > AW_1:
+        if X_1 > AW_2: 
+            if X_1 > AW_3: 
+                if X_1 > AW_4: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4:
+                                    print('25 veinticinco')
+                                else: 
+                                    print('20 veinte')
+                            else: 
+                                print('15 quince')
+                        else:
+                            print('10 diez')
+                    else:
+                        print('5 cinco') 
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2: 
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('24 Venticuatro')
+                                else:
+                                    ('19 Diez y nueve')
+                            else: 
+                                print('14 catorce')
+                        else: 
+                            print('9 nueve')
+                    else:
+                        print('4 cuatro')
+            else: 
+                if Z_1 > AV_1: 
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3: 
+                            if Z_1 > AV_4:
+                                print('23 veintitres')
+                            else:
+                                print('18 diez y ocho') 
+                        else: 
+                            print('13 trece')
+                    else: 
+                        print('8 ocho')
+                else:
+                    print('3 tres')
+        else:
+            if Z_1 > AV_1:
+                if Z_1 > AV_2: 
+                    if Z_1 > AV_3:
+                        if Z_1 > AV_4: 
+                            print('22 veintidos')
+                        else: 
+                            print('17 diez y siete')
+                    else: 
+                        print('12 doce') 
+                else: 
+                    print('7 siete')
+            else: 
+                print('2 dos')
+    else: 
+        if Z_1 > AV_1: 
+            if Z_1 > AV_2: 
+                if Z_1 > AV_3: 
+                    if Z_1 > AV_4: 
+                        print('21 veintiuno')
+                    else: 
+                        print('16 diez y seis')
+                else: 
+                    print('11 once')        
+            else:
+                print('6 seis') 
+        else:
+            print('1 uno')     
+
+else:
+    if Y_1 < AT_2:
+            if X_1 > AW_1: 
+                if X_1 > AW_2:
+                    if X_1 > AW_3: 
+                       if X_1 > AW_4: 
+                          if Z_1 > AV_1: 
+                              if Z_1 > AV_2:
+                                  if Z_1 > AV_3:
+                                      if Z_1 > AV_4: 
+                                          print('cincuenta 50')
+                                      else: 
+                                          print('cuarenta y cinco 45')
+                                  else: 
+                                      print('cuarenta 40')
+                              else: 
+                                  print('treinta y cinco 35')
+                          else: 
+                              print('treinta 30')
+                       else: 
+                          if Z_1 > AV_1: 
+                              if Z_1 > AV_2: 
+                                  if Z_1 > AV_3: 
+                                      if Z_1 > AV_4: 
+                                          print('cuarent ay cuatro 44')
+                                      else: 
+                                          print('cuarenta y uno 41')
+                                  else: 
+                                      print('treinta y nueve 39')
+                              else: 
+                                  print('treinta y cuatro 34')
+                          else: 
+                              print('Veitinueve 29 ')
+                    else: 
+                        if Z_1 > AV_1:
+                            if Z_1 > AV_2: 
+                                if Z_1 > AV_3:
+                                    if Z_1 > AV_4: 
+                                        print('Cuarenta y ocho 48')
+                                    else: 
+                                        print('cuarenta y tres 43')
+                                else:
+                                  print('treinta y ocho 38')
+                            else:
+                                print('Treinta y tres 33')
+                        
+                        else: 
+                            print('veintiocho 28')
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3:
+                                if Z_1 > AV_4: 
+                                  print('Cuarenta y siete 47')
+                                else: 
+                                  print('cuarenta y dos 42')
+                            else: 
+                              print('treinta y siete 37')
+                        else: 
+                            print('treinta y dos 32')
+                    else: 
+                        print('veintisiete 27')
+            else: 
+                if Z_1 > AV_1: 
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3: 
+                            if Z_1 > AV_4:
+                                print('cuarenta y seis 46')
+                            else: 
+                                print('cuarenta y uno 41') 
+                        else:
+                                print('treinta y seis 36')
+                    else: 
+                        print('treinta y uno 31')
+                else: 
+                    print('veintiseis 26')
+    else:
+        if Y_1 < AT_3:
+            if X_1 > AW_1:
+                if X_1 > AW_2: 
+                    if X_1 > AW_3:
+                        if X_1 > AW_4: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('sententa y cino 75') 
+                                        else: 
+                                            print('setenta 70')
+                                    else: 
+                                        print('Sesenta y cinco 65')
+                                else: 
+                                    print('Sesenta 60')
+                            else: 
+                                print('cincuenta y cinco 55')
+                        else: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('setenta y cuatro 74') 
+                                        else: 
+                                            print('sesenta y nueve 69')
+                                    else: 
+                                        print('sesenta y cuatro 64')
+                                else: 
+                                    print('Cincuenta y nueve 59')
+                            else: 
+                                print('cincuenta y cuatro 54') 
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2:
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('setenta y tres 73')
+                                    else: 
+                                        print('Seseta y ocho 68')
+                                else: 
+                                    print('Sesenta y tres 63') 
+                            else: 
+                                print('Cincuenta y ocho 58')
+                        else: 
+                            print('cincuenta y tres 53')
+                else:
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('Setenta y dos 72')
+                                else:
+                                    print('sesenta y siete 67')
+                            else: 
+                                print('sesenta y dos 62') 
+                        else: 
+                            print('cincuenta y siete 57')
+                    else: 
+                        print('Cincuenta y dos 52')
+            else:
+                if Z_1 > AV_1:
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3:
+                            if Z_1 > AV_4:
+                                print('setenta y uno 71') 
+                            else: 
+                                print('sesenta y seia 66') 
+                        else: 
+                            print('sesenta y uno 61')
+                    else: 
+                        print('cincuenta y seis 56') 
+                else: 
+                    print('cincuenta y uno 51')
+        else: 
+            if Y_1 < AT_4:
+                if X_1 > AW_1: 
+                    if X_1 > AW_2:
+                        if X_1 > AW_3: 
+                            if X_1 > AW_4: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3:
+                                            if Z_1 > AV_4: 
+                                                print('Cien 100')
+                                            else: 
+                                                print('Novent ay cinco')
+                                        else: 
+                                            print('noventa 90') 
+                                    else: 
+                                        print('Ochenta y cinco 85')
+                                else: 
+                                    print('Ochenta 80')
+                            else: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('noventa y nueve 99')
+                                            else: 
+                                                print('noventa y cuatro 94')
+                                        else: 
+                                            print('Ochenta y nueve 89')
+                                    else: 
+                                        print('Ochent ay cuetro 84')
+                                else: 
+                                    print('setenta y nueve')
+                        else: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2:
+                                    if Z_1 > AV_3:
+                                        if Z_1 > AV_4: 
+                                            print('Noventa y ocho 98')
+                                        else: 
+                                            print('noventa y tres 93')
+                                    else: 
+                                        print('ochenta y ocho 88') 
+                                else: 
+                                    print('Ochenta y tres 83')
+                            else: 
+                                print('Setenta y ocho 78')
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2: 
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('Noventa y siete 97')
+                                    else: 
+                                        print('noventa y dos 92')
+                                else: 
+                                    print('ochenta y siete 87')
+                            else: 
+                                print('ochenta y dos 82')
+                        else: 
+                            print('setenta y siete 77')
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('noventa y uno 91')
+                            else: 
+                                print('Ochenta y seis 86') 
+                        else: 
+                            print('ochenta y uno 81')
+                    else: 
+                        print('setenta y seis 76')
+
+            else: 
+                if X_1 > AW_1:
+                    if X_1 > AW_2: 
+                        if X > AW_3: 
+                            if X_1 > AW_4: 
+                                if Z_1 > AV_1:
+                                    if Z_1 > AV_2: 
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('Ciento veinticinco 125')
+                                            else: 
+                                                print('Ciento veinte 120')
+                                        else: 
+                                            print('Ciento quince 115')
+                                    else: 
+                                        print('ciento diez 110') 
+                                else: 
+                                    print('ciento cinco 105')
+                            else: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('Ciento veinti cuatro 124')
+                                            else: 
+                                                print('Ciento diez y nueve 119')
+                                        else: 
+                                            print('Ciento catorce 114') 
+                                    else: 
+                                        print('Ciento nueve 109')
+                                else: 
+                                    print('ciento cuatro 104')
+                        else: 
+                            if Z_1 > AV_1:
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('Ciento veinti tres 123') 
+                                        else: 
+                                            print('ciento diez y ocho 118')
+                                    else: 
+                                        print('Ciento trece 113')
+                                else: 
+                                    print('ciento ocho 108') 
+                            else: 
+                                print('ciento tres 103')
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2:
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('Siento veinidos 122')
+                                    else: 
+                                        print('Siento diez y siete 117')
+                                else: 
+                                    print('Ciento doce 112') 
+                            else: 
+                                print('ciento siete 107')
+                        else: 
+                            print('ciento dos 102')
+                else:
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2: 
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('Ciento veiniuno 121')
+                                else: 
+                                    print('ciento diez y seis 116')
+                            else: 
+                                print('ciento once 111')
+                        else: 
+                            print('ciento seis 106')
+                    else: 
+                        print('ciento uno 101')
+
+X_6= int(input('Veracidad: '))
+Y_6 = int(input('Credibilidad: '))
+z_6 = int(input('Honestidad: '))
+FW_1 = 1
+FW_2 = 2
+FW_3 = 3 
+FW_4 = 4 
+
+FT_1 = 1 
+FT_2 = 2
+FT_3 = 3
+FT_4 = 4 
+
+FV_1 = 1 
+FV_2 = 2 
+FV_3 = 3 
+FV_4 = 4 
+
+#SEXTO CUBO 
+
+if Y_1 < AT_1: 
+    if X_1 > AW_1:
+        if X_1 > AW_2: 
+            if X_1 > AW_3: 
+                if X_1 > AW_4: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4:
+                                    print('25 veinticinco')
+                                else: 
+                                    print('20 veinte')
+                            else: 
+                                print('15 quince')
+                        else:
+                            print('10 diez')
+                    else:
+                        print('5 cinco') 
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2: 
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('24 Venticuatro')
+                                else:
+                                    ('19 Diez y nueve')
+                            else: 
+                                print('14 catorce')
+                        else: 
+                            print('9 nueve')
+                    else:
+                        print('4 cuatro')
+            else: 
+                if Z_1 > AV_1: 
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3: 
+                            if Z_1 > AV_4:
+                                print('23 veintitres')
+                            else:
+                                print('18 diez y ocho') 
+                        else: 
+                            print('13 trece')
+                    else: 
+                        print('8 ocho')
+                else:
+                    print('3 tres')
+        else:
+            if Z_1 > AV_1:
+                if Z_1 > AV_2: 
+                    if Z_1 > AV_3:
+                        if Z_1 > AV_4: 
+                            print('22 veintidos')
+                        else: 
+                            print('17 diez y siete')
+                    else: 
+                        print('12 doce') 
+                else: 
+                    print('7 siete')
+            else: 
+                print('2 dos')
+    else: 
+        if Z_1 > AV_1: 
+            if Z_1 > AV_2: 
+                if Z_1 > AV_3: 
+                    if Z_1 > AV_4: 
+                        print('21 veintiuno')
+                    else: 
+                        print('16 diez y seis')
+                else: 
+                    print('11 once')        
+            else:
+                print('6 seis') 
+        else:
+            print('1 uno')     
+
+else:
+    if Y_1 < AT_2:
+            if X_1 > AW_1: 
+                if X_1 > AW_2:
+                    if X_1 > AW_3: 
+                       if X_1 > AW_4: 
+                          if Z_1 > AV_1: 
+                              if Z_1 > AV_2:
+                                  if Z_1 > AV_3:
+                                      if Z_1 > AV_4: 
+                                          print('cincuenta 50')
+                                      else: 
+                                          print('cuarenta y cinco 45')
+                                  else: 
+                                      print('cuarenta 40')
+                              else: 
+                                  print('treinta y cinco 35')
+                          else: 
+                              print('treinta 30')
+                       else: 
+                          if Z_1 > AV_1: 
+                              if Z_1 > AV_2: 
+                                  if Z_1 > AV_3: 
+                                      if Z_1 > AV_4: 
+                                          print('cuarent ay cuatro 44')
+                                      else: 
+                                          print('cuarenta y uno 41')
+                                  else: 
+                                      print('treinta y nueve 39')
+                              else: 
+                                  print('treinta y cuatro 34')
+                          else: 
+                              print('Veitinueve 29 ')
+                    else: 
+                        if Z_1 > AV_1:
+                            if Z_1 > AV_2: 
+                                if Z_1 > AV_3:
+                                    if Z_1 > AV_4: 
+                                        print('Cuarenta y ocho 48')
+                                    else: 
+                                        print('cuarenta y tres 43')
+                                else:
+                                  print('treinta y ocho 38')
+                            else:
+                                print('Treinta y tres 33')
+                        
+                        else: 
+                            print('veintiocho 28')
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3:
+                                if Z_1 > AV_4: 
+                                  print('Cuarenta y siete 47')
+                                else: 
+                                  print('cuarenta y dos 42')
+                            else: 
+                              print('treinta y siete 37')
+                        else: 
+                            print('treinta y dos 32')
+                    else: 
+                        print('veintisiete 27')
+            else: 
+                if Z_1 > AV_1: 
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3: 
+                            if Z_1 > AV_4:
+                                print('cuarenta y seis 46')
+                            else: 
+                                print('cuarenta y uno 41') 
+                        else:
+                                print('treinta y seis 36')
+                    else: 
+                        print('treinta y uno 31')
+                else: 
+                    print('veintiseis 26')
+    else:
+        if Y_1 < AT_3:
+            if X_1 > AW_1:
+                if X_1 > AW_2: 
+                    if X_1 > AW_3:
+                        if X_1 > AW_4: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('sententa y cino 75') 
+                                        else: 
+                                            print('setenta 70')
+                                    else: 
+                                        print('Sesenta y cinco 65')
+                                else: 
+                                    print('Sesenta 60')
+                            else: 
+                                print('cincuenta y cinco 55')
+                        else: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('setenta y cuatro 74') 
+                                        else: 
+                                            print('sesenta y nueve 69')
+                                    else: 
+                                        print('sesenta y cuatro 64')
+                                else: 
+                                    print('Cincuenta y nueve 59')
+                            else: 
+                                print('cincuenta y cuatro 54') 
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2:
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('setenta y tres 73')
+                                    else: 
+                                        print('Seseta y ocho 68')
+                                else: 
+                                    print('Sesenta y tres 63') 
+                            else: 
+                                print('Cincuenta y ocho 58')
+                        else: 
+                            print('cincuenta y tres 53')
+                else:
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('Setenta y dos 72')
+                                else:
+                                    print('sesenta y siete 67')
+                            else: 
+                                print('sesenta y dos 62') 
+                        else: 
+                            print('cincuenta y siete 57')
+                    else: 
+                        print('Cincuenta y dos 52')
+            else:
+                if Z_1 > AV_1:
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3:
+                            if Z_1 > AV_4:
+                                print('setenta y uno 71') 
+                            else: 
+                                print('sesenta y seia 66') 
+                        else: 
+                            print('sesenta y uno 61')
+                    else: 
+                        print('cincuenta y seis 56') 
+                else: 
+                    print('cincuenta y uno 51')
+        else: 
+            if Y_1 < AT_4:
+                if X_1 > AW_1: 
+                    if X_1 > AW_2:
+                        if X_1 > AW_3: 
+                            if X_1 > AW_4: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3:
+                                            if Z_1 > AV_4: 
+                                                print('Cien 100')
+                                            else: 
+                                                print('Novent ay cinco')
+                                        else: 
+                                            print('noventa 90') 
+                                    else: 
+                                        print('Ochenta y cinco 85')
+                                else: 
+                                    print('Ochenta 80')
+                            else: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('noventa y nueve 99')
+                                            else: 
+                                                print('noventa y cuatro 94')
+                                        else: 
+                                            print('Ochenta y nueve 89')
+                                    else: 
+                                        print('Ochent ay cuetro 84')
+                                else: 
+                                    print('setenta y nueve')
+                        else: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2:
+                                    if Z_1 > AV_3:
+                                        if Z_1 > AV_4: 
+                                            print('Noventa y ocho 98')
+                                        else: 
+                                            print('noventa y tres 93')
+                                    else: 
+                                        print('ochenta y ocho 88') 
+                                else: 
+                                    print('Ochenta y tres 83')
+                            else: 
+                                print('Setenta y ocho 78')
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2: 
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('Noventa y siete 97')
+                                    else: 
+                                        print('noventa y dos 92')
+                                else: 
+                                    print('ochenta y siete 87')
+                            else: 
+                                print('ochenta y dos 82')
+                        else: 
+                            print('setenta y siete 77')
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('noventa y uno 91')
+                            else: 
+                                print('Ochenta y seis 86') 
+                        else: 
+                            print('ochenta y uno 81')
+                    else: 
+                        print('setenta y seis 76')
+
+            else: 
+                if X_1 > AW_1:
+                    if X_1 > AW_2: 
+                        if X > AW_3: 
+                            if X_1 > AW_4: 
+                                if Z_1 > AV_1:
+                                    if Z_1 > AV_2: 
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('Ciento veinticinco 125')
+                                            else: 
+                                                print('Ciento veinte 120')
+                                        else: 
+                                            print('Ciento quince 115')
+                                    else: 
+                                        print('ciento diez 110') 
+                                else: 
+                                    print('ciento cinco 105')
+                            else: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('Ciento veinti cuatro 124')
+                                            else: 
+                                                print('Ciento diez y nueve 119')
+                                        else: 
+                                            print('Ciento catorce 114') 
+                                    else: 
+                                        print('Ciento nueve 109')
+                                else: 
+                                    print('ciento cuatro 104')
+                        else: 
+                            if Z_1 > AV_1:
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('Ciento veinti tres 123') 
+                                        else: 
+                                            print('ciento diez y ocho 118')
+                                    else: 
+                                        print('Ciento trece 113')
+                                else: 
+                                    print('ciento ocho 108') 
+                            else: 
+                                print('ciento tres 103')
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2:
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('Siento veinidos 122')
+                                    else: 
+                                        print('Siento diez y siete 117')
+                                else: 
+                                    print('Ciento doce 112') 
+                            else: 
+                                print('ciento siete 107')
+                        else: 
+                            print('ciento dos 102')
+                else:
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2: 
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('Ciento veiniuno 121')
+                                else: 
+                                    print('ciento diez y seis 116')
+                            else: 
+                                print('ciento once 111')
+                        else: 
+                            print('ciento seis 106')
+                    else: 
+                        print('ciento uno 101')
+
+X_7 = int(input('Accesibilidad: '))
+Y_7 = int(input('Facilidad: '))
+Z_7 = int(input('Canales de comunicación: '))
+GW_1 = 1
+GW_2 = 2
+GW_3 = 3 
+GW_4 = 4 
+
+GT_1 = 1 
+GT_2 = 2
+GT_3 = 3
+GT_4 = 4 
+
+GV_1 = 1 
+GV_2 = 2 
+GV_3 = 3 
+GV_4 = 4 
+
+#SEPTIMO CUBO
+
+if Y_1 < AT_1: 
+    if X_1 > AW_1:
+        if X_1 > AW_2: 
+            if X_1 > AW_3: 
+                if X_1 > AW_4: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4:
+                                    print('25 veinticinco')
+                                else: 
+                                    print('20 veinte')
+                            else: 
+                                print('15 quince')
+                        else:
+                            print('10 diez')
+                    else:
+                        print('5 cinco') 
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2: 
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('24 Venticuatro')
+                                else:
+                                    ('19 Diez y nueve')
+                            else: 
+                                print('14 catorce')
+                        else: 
+                            print('9 nueve')
+                    else:
+                        print('4 cuatro')
+            else: 
+                if Z_1 > AV_1: 
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3: 
+                            if Z_1 > AV_4:
+                                print('23 veintitres')
+                            else:
+                                print('18 diez y ocho') 
+                        else: 
+                            print('13 trece')
+                    else: 
+                        print('8 ocho')
+                else:
+                    print('3 tres')
+        else:
+            if Z_1 > AV_1:
+                if Z_1 > AV_2: 
+                    if Z_1 > AV_3:
+                        if Z_1 > AV_4: 
+                            print('22 veintidos')
+                        else: 
+                            print('17 diez y siete')
+                    else: 
+                        print('12 doce') 
+                else: 
+                    print('7 siete')
+            else: 
+                print('2 dos')
+    else: 
+        if Z_1 > AV_1: 
+            if Z_1 > AV_2: 
+                if Z_1 > AV_3: 
+                    if Z_1 > AV_4: 
+                        print('21 veintiuno')
+                    else: 
+                        print('16 diez y seis')
+                else: 
+                    print('11 once')        
+            else:
+                print('6 seis') 
+        else:
+            print('1 uno')     
+
+else:
+    if Y_1 < AT_2:
+            if X_1 > AW_1: 
+                if X_1 > AW_2:
+                    if X_1 > AW_3: 
+                       if X_1 > AW_4: 
+                          if Z_1 > AV_1: 
+                              if Z_1 > AV_2:
+                                  if Z_1 > AV_3:
+                                      if Z_1 > AV_4: 
+                                          print('cincuenta 50')
+                                      else: 
+                                          print('cuarenta y cinco 45')
+                                  else: 
+                                      print('cuarenta 40')
+                              else: 
+                                  print('treinta y cinco 35')
+                          else: 
+                              print('treinta 30')
+                       else: 
+                          if Z_1 > AV_1: 
+                              if Z_1 > AV_2: 
+                                  if Z_1 > AV_3: 
+                                      if Z_1 > AV_4: 
+                                          print('cuarent ay cuatro 44')
+                                      else: 
+                                          print('cuarenta y uno 41')
+                                  else: 
+                                      print('treinta y nueve 39')
+                              else: 
+                                  print('treinta y cuatro 34')
+                          else: 
+                              print('Veitinueve 29 ')
+                    else: 
+                        if Z_1 > AV_1:
+                            if Z_1 > AV_2: 
+                                if Z_1 > AV_3:
+                                    if Z_1 > AV_4: 
+                                        print('Cuarenta y ocho 48')
+                                    else: 
+                                        print('cuarenta y tres 43')
+                                else:
+                                  print('treinta y ocho 38')
+                            else:
+                                print('Treinta y tres 33')
+                        
+                        else: 
+                            print('veintiocho 28')
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3:
+                                if Z_1 > AV_4: 
+                                  print('Cuarenta y siete 47')
+                                else: 
+                                  print('cuarenta y dos 42')
+                            else: 
+                              print('treinta y siete 37')
+                        else: 
+                            print('treinta y dos 32')
+                    else: 
+                        print('veintisiete 27')
+            else: 
+                if Z_1 > AV_1: 
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3: 
+                            if Z_1 > AV_4:
+                                print('cuarenta y seis 46')
+                            else: 
+                                print('cuarenta y uno 41') 
+                        else:
+                                print('treinta y seis 36')
+                    else: 
+                        print('treinta y uno 31')
+                else: 
+                    print('veintiseis 26')
+    else:
+        if Y_1 < AT_3:
+            if X_1 > AW_1:
+                if X_1 > AW_2: 
+                    if X_1 > AW_3:
+                        if X_1 > AW_4: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('sententa y cino 75') 
+                                        else: 
+                                            print('setenta 70')
+                                    else: 
+                                        print('Sesenta y cinco 65')
+                                else: 
+                                    print('Sesenta 60')
+                            else: 
+                                print('cincuenta y cinco 55')
+                        else: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('setenta y cuatro 74') 
+                                        else: 
+                                            print('sesenta y nueve 69')
+                                    else: 
+                                        print('sesenta y cuatro 64')
+                                else: 
+                                    print('Cincuenta y nueve 59')
+                            else: 
+                                print('cincuenta y cuatro 54') 
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2:
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('setenta y tres 73')
+                                    else: 
+                                        print('Seseta y ocho 68')
+                                else: 
+                                    print('Sesenta y tres 63') 
+                            else: 
+                                print('Cincuenta y ocho 58')
+                        else: 
+                            print('cincuenta y tres 53')
+                else:
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('Setenta y dos 72')
+                                else:
+                                    print('sesenta y siete 67')
+                            else: 
+                                print('sesenta y dos 62') 
+                        else: 
+                            print('cincuenta y siete 57')
+                    else: 
+                        print('Cincuenta y dos 52')
+            else:
+                if Z_1 > AV_1:
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3:
+                            if Z_1 > AV_4:
+                                print('setenta y uno 71') 
+                            else: 
+                                print('sesenta y seia 66') 
+                        else: 
+                            print('sesenta y uno 61')
+                    else: 
+                        print('cincuenta y seis 56') 
+                else: 
+                    print('cincuenta y uno 51')
+        else: 
+            if Y_1 < AT_4:
+                if X_1 > AW_1: 
+                    if X_1 > AW_2:
+                        if X_1 > AW_3: 
+                            if X_1 > AW_4: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3:
+                                            if Z_1 > AV_4: 
+                                                print('Cien 100')
+                                            else: 
+                                                print('Novent ay cinco')
+                                        else: 
+                                            print('noventa 90') 
+                                    else: 
+                                        print('Ochenta y cinco 85')
+                                else: 
+                                    print('Ochenta 80')
+                            else: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('noventa y nueve 99')
+                                            else: 
+                                                print('noventa y cuatro 94')
+                                        else: 
+                                            print('Ochenta y nueve 89')
+                                    else: 
+                                        print('Ochent ay cuetro 84')
+                                else: 
+                                    print('setenta y nueve')
+                        else: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2:
+                                    if Z_1 > AV_3:
+                                        if Z_1 > AV_4: 
+                                            print('Noventa y ocho 98')
+                                        else: 
+                                            print('noventa y tres 93')
+                                    else: 
+                                        print('ochenta y ocho 88') 
+                                else: 
+                                    print('Ochenta y tres 83')
+                            else: 
+                                print('Setenta y ocho 78')
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2: 
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('Noventa y siete 97')
+                                    else: 
+                                        print('noventa y dos 92')
+                                else: 
+                                    print('ochenta y siete 87')
+                            else: 
+                                print('ochenta y dos 82')
+                        else: 
+                            print('setenta y siete 77')
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('noventa y uno 91')
+                            else: 
+                                print('Ochenta y seis 86') 
+                        else: 
+                            print('ochenta y uno 81')
+                    else: 
+                        print('setenta y seis 76')
+
+            else: 
+                if X_1 > AW_1:
+                    if X_1 > AW_2: 
+                        if X > AW_3: 
+                            if X_1 > AW_4: 
+                                if Z_1 > AV_1:
+                                    if Z_1 > AV_2: 
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('Ciento veinticinco 125')
+                                            else: 
+                                                print('Ciento veinte 120')
+                                        else: 
+                                            print('Ciento quince 115')
+                                    else: 
+                                        print('ciento diez 110') 
+                                else: 
+                                    print('ciento cinco 105')
+                            else: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('Ciento veinti cuatro 124')
+                                            else: 
+                                                print('Ciento diez y nueve 119')
+                                        else: 
+                                            print('Ciento catorce 114') 
+                                    else: 
+                                        print('Ciento nueve 109')
+                                else: 
+                                    print('ciento cuatro 104')
+                        else: 
+                            if Z_1 > AV_1:
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('Ciento veinti tres 123') 
+                                        else: 
+                                            print('ciento diez y ocho 118')
+                                    else: 
+                                        print('Ciento trece 113')
+                                else: 
+                                    print('ciento ocho 108') 
+                            else: 
+                                print('ciento tres 103')
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2:
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('Siento veinidos 122')
+                                    else: 
+                                        print('Siento diez y siete 117')
+                                else: 
+                                    print('Ciento doce 112') 
+                            else: 
+                                print('ciento siete 107')
+                        else: 
+                            print('ciento dos 102')
+                else:
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2: 
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('Ciento veiniuno 121')
+                                else: 
+                                    print('ciento diez y seis 116')
+                            else: 
+                                print('ciento once 111')
+                        else: 
+                            print('ciento seis 106')
+                    else: 
+                        print('ciento uno 101')
+
+x_8 = int(input('Información: '))
+Y_8 = int(input('Lenguaje: '))
+Z_8 = int(input('Escucha: '))
+HW_1 = 1
+HW_2 = 2
+HW_3 = 3 
+HW_4 = 4 
+
+HT_1 = 1 
+HT_2 = 2
+HT_3 = 3
+HT_4 = 4 
+
+HV_1 = 1 
+HV_2 = 2 
+HV_3 = 3 
+HV_4 = 4 
+
+#OCTAVO CUBO 
+if Y_1 < AT_1: 
+    if X_1 > AW_1:
+        if X_1 > AW_2: 
+            if X_1 > AW_3: 
+                if X_1 > AW_4: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4:
+                                    print('25 veinticinco')
+                                else: 
+                                    print('20 veinte')
+                            else: 
+                                print('15 quince')
+                        else:
+                            print('10 diez')
+                    else:
+                        print('5 cinco') 
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2: 
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('24 Venticuatro')
+                                else:
+                                    ('19 Diez y nueve')
+                            else: 
+                                print('14 catorce')
+                        else: 
+                            print('9 nueve')
+                    else:
+                        print('4 cuatro')
+            else: 
+                if Z_1 > AV_1: 
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3: 
+                            if Z_1 > AV_4:
+                                print('23 veintitres')
+                            else:
+                                print('18 diez y ocho') 
+                        else: 
+                            print('13 trece')
+                    else: 
+                        print('8 ocho')
+                else:
+                    print('3 tres')
+        else:
+            if Z_1 > AV_1:
+                if Z_1 > AV_2: 
+                    if Z_1 > AV_3:
+                        if Z_1 > AV_4: 
+                            print('22 veintidos')
+                        else: 
+                            print('17 diez y siete')
+                    else: 
+                        print('12 doce') 
+                else: 
+                    print('7 siete')
+            else: 
+                print('2 dos')
+    else: 
+        if Z_1 > AV_1: 
+            if Z_1 > AV_2: 
+                if Z_1 > AV_3: 
+                    if Z_1 > AV_4: 
+                        print('21 veintiuno')
+                    else: 
+                        print('16 diez y seis')
+                else: 
+                    print('11 once')        
+            else:
+                print('6 seis') 
+        else:
+            print('1 uno')     
+
+else:
+    if Y_1 < AT_2:
+            if X_1 > AW_1: 
+                if X_1 > AW_2:
+                    if X_1 > AW_3: 
+                       if X_1 > AW_4: 
+                          if Z_1 > AV_1: 
+                              if Z_1 > AV_2:
+                                  if Z_1 > AV_3:
+                                      if Z_1 > AV_4: 
+                                          print('cincuenta 50')
+                                      else: 
+                                          print('cuarenta y cinco 45')
+                                  else: 
+                                      print('cuarenta 40')
+                              else: 
+                                  print('treinta y cinco 35')
+                          else: 
+                              print('treinta 30')
+                       else: 
+                          if Z_1 > AV_1: 
+                              if Z_1 > AV_2: 
+                                  if Z_1 > AV_3: 
+                                      if Z_1 > AV_4: 
+                                          print('cuarent ay cuatro 44')
+                                      else: 
+                                          print('cuarenta y uno 41')
+                                  else: 
+                                      print('treinta y nueve 39')
+                              else: 
+                                  print('treinta y cuatro 34')
+                          else: 
+                              print('Veitinueve 29 ')
+                    else: 
+                        if Z_1 > AV_1:
+                            if Z_1 > AV_2: 
+                                if Z_1 > AV_3:
+                                    if Z_1 > AV_4: 
+                                        print('Cuarenta y ocho 48')
+                                    else: 
+                                        print('cuarenta y tres 43')
+                                else:
+                                  print('treinta y ocho 38')
+                            else:
+                                print('Treinta y tres 33')
+                        
+                        else: 
+                            print('veintiocho 28')
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3:
+                                if Z_1 > AV_4: 
+                                  print('Cuarenta y siete 47')
+                                else: 
+                                  print('cuarenta y dos 42')
+                            else: 
+                              print('treinta y siete 37')
+                        else: 
+                            print('treinta y dos 32')
+                    else: 
+                        print('veintisiete 27')
+            else: 
+                if Z_1 > AV_1: 
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3: 
+                            if Z_1 > AV_4:
+                                print('cuarenta y seis 46')
+                            else: 
+                                print('cuarenta y uno 41') 
+                        else:
+                                print('treinta y seis 36')
+                    else: 
+                        print('treinta y uno 31')
+                else: 
+                    print('veintiseis 26')
+    else:
+        if Y_1 < AT_3:
+            if X_1 > AW_1:
+                if X_1 > AW_2: 
+                    if X_1 > AW_3:
+                        if X_1 > AW_4: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('sententa y cino 75') 
+                                        else: 
+                                            print('setenta 70')
+                                    else: 
+                                        print('Sesenta y cinco 65')
+                                else: 
+                                    print('Sesenta 60')
+                            else: 
+                                print('cincuenta y cinco 55')
+                        else: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('setenta y cuatro 74') 
+                                        else: 
+                                            print('sesenta y nueve 69')
+                                    else: 
+                                        print('sesenta y cuatro 64')
+                                else: 
+                                    print('Cincuenta y nueve 59')
+                            else: 
+                                print('cincuenta y cuatro 54') 
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2:
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('setenta y tres 73')
+                                    else: 
+                                        print('Seseta y ocho 68')
+                                else: 
+                                    print('Sesenta y tres 63') 
+                            else: 
+                                print('Cincuenta y ocho 58')
+                        else: 
+                            print('cincuenta y tres 53')
+                else:
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('Setenta y dos 72')
+                                else:
+                                    print('sesenta y siete 67')
+                            else: 
+                                print('sesenta y dos 62') 
+                        else: 
+                            print('cincuenta y siete 57')
+                    else: 
+                        print('Cincuenta y dos 52')
+            else:
+                if Z_1 > AV_1:
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3:
+                            if Z_1 > AV_4:
+                                print('setenta y uno 71') 
+                            else: 
+                                print('sesenta y seia 66') 
+                        else: 
+                            print('sesenta y uno 61')
+                    else: 
+                        print('cincuenta y seis 56') 
+                else: 
+                    print('cincuenta y uno 51')
+        else: 
+            if Y_1 < AT_4:
+                if X_1 > AW_1: 
+                    if X_1 > AW_2:
+                        if X_1 > AW_3: 
+                            if X_1 > AW_4: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3:
+                                            if Z_1 > AV_4: 
+                                                print('Cien 100')
+                                            else: 
+                                                print('Novent ay cinco')
+                                        else: 
+                                            print('noventa 90') 
+                                    else: 
+                                        print('Ochenta y cinco 85')
+                                else: 
+                                    print('Ochenta 80')
+                            else: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('noventa y nueve 99')
+                                            else: 
+                                                print('noventa y cuatro 94')
+                                        else: 
+                                            print('Ochenta y nueve 89')
+                                    else: 
+                                        print('Ochent ay cuetro 84')
+                                else: 
+                                    print('setenta y nueve')
+                        else: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2:
+                                    if Z_1 > AV_3:
+                                        if Z_1 > AV_4: 
+                                            print('Noventa y ocho 98')
+                                        else: 
+                                            print('noventa y tres 93')
+                                    else: 
+                                        print('ochenta y ocho 88') 
+                                else: 
+                                    print('Ochenta y tres 83')
+                            else: 
+                                print('Setenta y ocho 78')
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2: 
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('Noventa y siete 97')
+                                    else: 
+                                        print('noventa y dos 92')
+                                else: 
+                                    print('ochenta y siete 87')
+                            else: 
+                                print('ochenta y dos 82')
+                        else: 
+                            print('setenta y siete 77')
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('noventa y uno 91')
+                            else: 
+                                print('Ochenta y seis 86') 
+                        else: 
+                            print('ochenta y uno 81')
+                    else: 
+                        print('setenta y seis 76')
+
+            else: 
+                if X_1 > AW_1:
+                    if X_1 > AW_2: 
+                        if X > AW_3: 
+                            if X_1 > AW_4: 
+                                if Z_1 > AV_1:
+                                    if Z_1 > AV_2: 
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('Ciento veinticinco 125')
+                                            else: 
+                                                print('Ciento veinte 120')
+                                        else: 
+                                            print('Ciento quince 115')
+                                    else: 
+                                        print('ciento diez 110') 
+                                else: 
+                                    print('ciento cinco 105')
+                            else: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('Ciento veinti cuatro 124')
+                                            else: 
+                                                print('Ciento diez y nueve 119')
+                                        else: 
+                                            print('Ciento catorce 114') 
+                                    else: 
+                                        print('Ciento nueve 109')
+                                else: 
+                                    print('ciento cuatro 104')
+                        else: 
+                            if Z_1 > AV_1:
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('Ciento veinti tres 123') 
+                                        else: 
+                                            print('ciento diez y ocho 118')
+                                    else: 
+                                        print('Ciento trece 113')
+                                else: 
+                                    print('ciento ocho 108') 
+                            else: 
+                                print('ciento tres 103')
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2:
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('Siento veinidos 122')
+                                    else: 
+                                        print('Siento diez y siete 117')
+                                else: 
+                                    print('Ciento doce 112') 
+                            else: 
+                                print('ciento siete 107')
+                        else: 
+                            print('ciento dos 102')
+                else:
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2: 
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('Ciento veiniuno 121')
+                                else: 
+                                    print('ciento diez y seis 116')
+                            else: 
+                                print('ciento once 111')
+                        else: 
+                            print('ciento seis 106')
+                    else: 
+                        print('ciento uno 101')
+
+X_9 = int(input('Empatía: '))
+Y_9 = int(input('Cocreación: '))
+Z_9 = int(input('Conocimiento del cliente: '))
+IW_1 = 1
+IW_2 = 2
+IW_3 = 3 
+IW_4 = 4 
+
+IT_1 = 1 
+IT_2 = 2
+IT_3 = 3
+IT_4 = 4 
+
+IV_1 = 1 
+IV_2 = 2 
+IV_3 = 3 
+IV_4 = 4 
+
+#NOVENO CUBO 
+if Y_1 < AT_1: 
+    if X_1 > AW_1:
+        if X_1 > AW_2: 
+            if X_1 > AW_3: 
+                if X_1 > AW_4: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4:
+                                    print('25 veinticinco')
+                                else: 
+                                    print('20 veinte')
+                            else: 
+                                print('15 quince')
+                        else:
+                            print('10 diez')
+                    else:
+                        print('5 cinco') 
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2: 
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('24 Venticuatro')
+                                else:
+                                    ('19 Diez y nueve')
+                            else: 
+                                print('14 catorce')
+                        else: 
+                            print('9 nueve')
+                    else:
+                        print('4 cuatro')
+            else: 
+                if Z_1 > AV_1: 
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3: 
+                            if Z_1 > AV_4:
+                                print('23 veintitres')
+                            else:
+                                print('18 diez y ocho') 
+                        else: 
+                            print('13 trece')
+                    else: 
+                        print('8 ocho')
+                else:
+                    print('3 tres')
+        else:
+            if Z_1 > AV_1:
+                if Z_1 > AV_2: 
+                    if Z_1 > AV_3:
+                        if Z_1 > AV_4: 
+                            print('22 veintidos')
+                        else: 
+                            print('17 diez y siete')
+                    else: 
+                        print('12 doce') 
+                else: 
+                    print('7 siete')
+            else: 
+                print('2 dos')
+    else: 
+        if Z_1 > AV_1: 
+            if Z_1 > AV_2: 
+                if Z_1 > AV_3: 
+                    if Z_1 > AV_4: 
+                        print('21 veintiuno')
+                    else: 
+                        print('16 diez y seis')
+                else: 
+                    print('11 once')        
+            else:
+                print('6 seis') 
+        else:
+            print('1 uno')     
+
+else:
+    if Y_1 < AT_2:
+            if X_1 > AW_1: 
+                if X_1 > AW_2:
+                    if X_1 > AW_3: 
+                       if X_1 > AW_4: 
+                          if Z_1 > AV_1: 
+                              if Z_1 > AV_2:
+                                  if Z_1 > AV_3:
+                                      if Z_1 > AV_4: 
+                                          print('cincuenta 50')
+                                      else: 
+                                          print('cuarenta y cinco 45')
+                                  else: 
+                                      print('cuarenta 40')
+                              else: 
+                                  print('treinta y cinco 35')
+                          else: 
+                              print('treinta 30')
+                       else: 
+                          if Z_1 > AV_1: 
+                              if Z_1 > AV_2: 
+                                  if Z_1 > AV_3: 
+                                      if Z_1 > AV_4: 
+                                          print('cuarent ay cuatro 44')
+                                      else: 
+                                          print('cuarenta y uno 41')
+                                  else: 
+                                      print('treinta y nueve 39')
+                              else: 
+                                  print('treinta y cuatro 34')
+                          else: 
+                              print('Veitinueve 29 ')
+                    else: 
+                        if Z_1 > AV_1:
+                            if Z_1 > AV_2: 
+                                if Z_1 > AV_3:
+                                    if Z_1 > AV_4: 
+                                        print('Cuarenta y ocho 48')
+                                    else: 
+                                        print('cuarenta y tres 43')
+                                else:
+                                  print('treinta y ocho 38')
+                            else:
+                                print('Treinta y tres 33')
+                        
+                        else: 
+                            print('veintiocho 28')
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3:
+                                if Z_1 > AV_4: 
+                                  print('Cuarenta y siete 47')
+                                else: 
+                                  print('cuarenta y dos 42')
+                            else: 
+                              print('treinta y siete 37')
+                        else: 
+                            print('treinta y dos 32')
+                    else: 
+                        print('veintisiete 27')
+            else: 
+                if Z_1 > AV_1: 
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3: 
+                            if Z_1 > AV_4:
+                                print('cuarenta y seis 46')
+                            else: 
+                                print('cuarenta y uno 41') 
+                        else:
+                                print('treinta y seis 36')
+                    else: 
+                        print('treinta y uno 31')
+                else: 
+                    print('veintiseis 26')
+    else:
+        if Y_1 < AT_3:
+            if X_1 > AW_1:
+                if X_1 > AW_2: 
+                    if X_1 > AW_3:
+                        if X_1 > AW_4: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('sententa y cino 75') 
+                                        else: 
+                                            print('setenta 70')
+                                    else: 
+                                        print('Sesenta y cinco 65')
+                                else: 
+                                    print('Sesenta 60')
+                            else: 
+                                print('cincuenta y cinco 55')
+                        else: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('setenta y cuatro 74') 
+                                        else: 
+                                            print('sesenta y nueve 69')
+                                    else: 
+                                        print('sesenta y cuatro 64')
+                                else: 
+                                    print('Cincuenta y nueve 59')
+                            else: 
+                                print('cincuenta y cuatro 54') 
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2:
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('setenta y tres 73')
+                                    else: 
+                                        print('Seseta y ocho 68')
+                                else: 
+                                    print('Sesenta y tres 63') 
+                            else: 
+                                print('Cincuenta y ocho 58')
+                        else: 
+                            print('cincuenta y tres 53')
+                else:
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('Setenta y dos 72')
+                                else:
+                                    print('sesenta y siete 67')
+                            else: 
+                                print('sesenta y dos 62') 
+                        else: 
+                            print('cincuenta y siete 57')
+                    else: 
+                        print('Cincuenta y dos 52')
+            else:
+                if Z_1 > AV_1:
+                    if Z_1 > AV_2: 
+                        if Z_1 > AV_3:
+                            if Z_1 > AV_4:
+                                print('setenta y uno 71') 
+                            else: 
+                                print('sesenta y seia 66') 
+                        else: 
+                            print('sesenta y uno 61')
+                    else: 
+                        print('cincuenta y seis 56') 
+                else: 
+                    print('cincuenta y uno 51')
+        else: 
+            if Y_1 < AT_4:
+                if X_1 > AW_1: 
+                    if X_1 > AW_2:
+                        if X_1 > AW_3: 
+                            if X_1 > AW_4: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3:
+                                            if Z_1 > AV_4: 
+                                                print('Cien 100')
+                                            else: 
+                                                print('Novent ay cinco')
+                                        else: 
+                                            print('noventa 90') 
+                                    else: 
+                                        print('Ochenta y cinco 85')
+                                else: 
+                                    print('Ochenta 80')
+                            else: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('noventa y nueve 99')
+                                            else: 
+                                                print('noventa y cuatro 94')
+                                        else: 
+                                            print('Ochenta y nueve 89')
+                                    else: 
+                                        print('Ochent ay cuetro 84')
+                                else: 
+                                    print('setenta y nueve')
+                        else: 
+                            if Z_1 > AV_1: 
+                                if Z_1 > AV_2:
+                                    if Z_1 > AV_3:
+                                        if Z_1 > AV_4: 
+                                            print('Noventa y ocho 98')
+                                        else: 
+                                            print('noventa y tres 93')
+                                    else: 
+                                        print('ochenta y ocho 88') 
+                                else: 
+                                    print('Ochenta y tres 83')
+                            else: 
+                                print('Setenta y ocho 78')
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2: 
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('Noventa y siete 97')
+                                    else: 
+                                        print('noventa y dos 92')
+                                else: 
+                                    print('ochenta y siete 87')
+                            else: 
+                                print('ochenta y dos 82')
+                        else: 
+                            print('setenta y siete 77')
+                else: 
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2:
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('noventa y uno 91')
+                            else: 
+                                print('Ochenta y seis 86') 
+                        else: 
+                            print('ochenta y uno 81')
+                    else: 
+                        print('setenta y seis 76')
+
+            else: 
+                if X_1 > AW_1:
+                    if X_1 > AW_2: 
+                        if X > AW_3: 
+                            if X_1 > AW_4: 
+                                if Z_1 > AV_1:
+                                    if Z_1 > AV_2: 
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('Ciento veinticinco 125')
+                                            else: 
+                                                print('Ciento veinte 120')
+                                        else: 
+                                            print('Ciento quince 115')
+                                    else: 
+                                        print('ciento diez 110') 
+                                else: 
+                                    print('ciento cinco 105')
+                            else: 
+                                if Z_1 > AV_1: 
+                                    if Z_1 > AV_2:
+                                        if Z_1 > AV_3: 
+                                            if Z_1 > AV_4: 
+                                                print('Ciento veinti cuatro 124')
+                                            else: 
+                                                print('Ciento diez y nueve 119')
+                                        else: 
+                                            print('Ciento catorce 114') 
+                                    else: 
+                                        print('Ciento nueve 109')
+                                else: 
+                                    print('ciento cuatro 104')
+                        else: 
+                            if Z_1 > AV_1:
+                                if Z_1 > AV_2: 
+                                    if Z_1 > AV_3: 
+                                        if Z_1 > AV_4:
+                                            print('Ciento veinti tres 123') 
+                                        else: 
+                                            print('ciento diez y ocho 118')
+                                    else: 
+                                        print('Ciento trece 113')
+                                else: 
+                                    print('ciento ocho 108') 
+                            else: 
+                                print('ciento tres 103')
+                    else: 
+                        if Z_1 > AV_1: 
+                            if Z_1 > AV_2:
+                                if Z_1 > AV_3: 
+                                    if Z_1 > AV_4: 
+                                        print('Siento veinidos 122')
+                                    else: 
+                                        print('Siento diez y siete 117')
+                                else: 
+                                    print('Ciento doce 112') 
+                            else: 
+                                print('ciento siete 107')
+                        else: 
+                            print('ciento dos 102')
+                else:
+                    if Z_1 > AV_1: 
+                        if Z_1 > AV_2: 
+                            if Z_1 > AV_3: 
+                                if Z_1 > AV_4: 
+                                    print('Ciento veiniuno 121')
+                                else: 
+                                    print('ciento diez y seis 116')
+                            else: 
+                                print('ciento once 111')
+                        else: 
+                            print('ciento seis 106')
+                    else: 
+                        print('ciento uno 101')
+
+# EJES DE ENTRADA DE LA INFORMACIÓN
+
+
+# ARBOL DE DECISIÓN QUE TOMA TODAS LAS RUTAS PARA LLEGAR A CADA COORDENADA
+
